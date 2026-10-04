@@ -7,8 +7,9 @@ LIB_NAME = libasn1.a
 TARGET = asn1_demo
 
 OBJDIR = build
-LIB_OBJECTS = $(OBJDIR)/asn1.o 
-APP_OBJECTS = $(OBJDIR)/main.o $(OBJDIR)/nope.o
+LIB_OBJECTS = $(OBJDIR)/asn1.o
+APP_OBJECTS = $(OBJDIR)/main.o
+PLUGIN_OBJECTS = $(OBJDIR)/panos.o $(OBJDIR)/checkpoint.o $(OBJDIR)/fortinet.o $(OBJDIR)/juniper.o $(OBJDIR)/sonicwall.o
 
 all: $(LIB_NAME) $(TARGET)
 
@@ -34,10 +35,22 @@ $(OBJDIR)/asn1.o: src/asn1.c include/asn1.h | $(OBJDIR)
 $(OBJDIR)/main.o: src/main.c include/asn1.h | $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(OBJDIR)/nope.o: src/nope.c include/asn1.h | $(OBJDIR)
+$(OBJDIR)/panos.o: src/plugins/panos.c include/firewall_plugins.h | $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(LIB_NAME): $(LIB_OBJECTS)
+$(OBJDIR)/checkpoint.o: src/plugins/checkpoint.c include/firewall_plugins.h | $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDIR)/fortinet.o: src/plugins/fortinet.c include/firewall_plugins.h | $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDIR)/juniper.o: src/plugins/juniper.c include/firewall_plugins.h | $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDIR)/sonicwall.o: src/plugins/sonicwall.c include/firewall_plugins.h | $(OBJDIR)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(LIB_NAME): $(LIB_OBJECTS) $(PLUGIN_OBJECTS)
 	$(AR) $(ARFLAGS) $@ $^
 
 $(TARGET): $(APP_OBJECTS) $(LIB_NAME)

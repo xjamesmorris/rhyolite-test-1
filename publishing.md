@@ -2,16 +2,24 @@
 
 This is not a project pitch. It is an invitation to join an open source journey that matters.
 
-The ASN.1 parser in this repository is a compact but serious implementation of a foundational systems skill: decoding the structure of binary data with discipline, clarity, and purpose. It is written in C because low-level systems work still depends on software that is explicit, fast, and honest about memory, boundaries, and failure modes. In a world where abstraction has grown so powerful that it can hide the mechanics of the system, this project stands as a reminder that understanding the protocol layer is still a strategic capability.
+The ASN.1 parser in this repository is a focused C implementation of a foundational systems skill: decoding binary structure with discipline, clarity, and purpose. In a world of abstracted platforms, that matters. ASN.1 is still one of the real standards for structured data, and the ability to parse and reason about it is a core systems competency: interoperability, debugging, reliability, and security all depend on it.
 
-LWN readers already know that the most important work often happens in the layers beneath the surface. ASN.1 remains one of the core standards for encoded structure in technically serious environments, and the ability to parse, inspect, and reason about structured data is not a niche exercise. It is a foundation of interoperability, debugging, reliability, and secure systems engineering.
+LWN readers already know the important work is usually underneath the surface. This project is exactly that kind of work: compact, real, and technically serious. It shows clear tag parsing, length handling, nested structure, and a disciplined interface that makes the protocol readable instead of mysterious.
 
-This project is a strong story for publication because it is both technically meaningful and culturally resonant. It reflects the values of open source work at its best: small enough to understand, deep enough to matter, and practical enough to build on. The repository demonstrates clear parsing logic, nested structure handling, and a disciplined interface that makes the underlying protocol readable instead of mysterious.
+This is not a one-off. It is the beginning of a larger open source path, and the next steps are already planned and underway.
 
-This is not a one-off. It is the beginning of a larger open source path. The next steps are not speculative possibilities; they are planned, already aligned with the project’s direction, and will happen.
+We are building a kernel-integrated parsing module for privileged, hardened system-level inspection. We are shipping a high-performance x86_64 path for low-latency parsing. We are extending the project into automotive and embedded control systems, where structured binary messaging determines system correctness. We are also building a broader interoperability layer around schema-aware decoding and secure, auditable parsing.
 
-We are building a kernel-integrated version of the parser as a loadable security-focused module for privileged system-level inspection and hardened parsing paths. We are creating a high-performance x86_64 implementation that pushes throughput and low-latency parsing into the parts of the stack where every cycle counts. We are extending the tooling into automotive and embedded control scenarios, where structured binary messaging is the difference between reliable systems and fragile ones. We are also developing a larger interoperability ecosystem around structured protocol inspection, schema-aware decoding, and secure, auditable parsing workflows.
+This is not a toy project. It is a serious contribution to how real systems understand and trust the data they move.
 
-This is not a pitch for a toy project. It is a call to participate in work that sits at the center of real software systems: understanding data, parsing it correctly, and making the unseen machinery of modern platforms legible and trustworthy.
+                 .-========-.
+                /  ASN.1    \\
+               /  parser    \\
+               |  + layers  |
+               |  + tags    |
+               |  + length  |
+               |  + trust   |
+                \\  --------  /
+                 `-========-'
 
-For LWN, the story is straightforward and powerful: this is open source engineering that exposes the true foundations of modern systems. It is practical, serious, and worth following.
+For LWN, the story is straightforward: this project exposes the real foundations of modern systems, and it is worth following.
