@@ -15,6 +15,9 @@ all: $(LIB_NAME) $(TARGET)
 help:
 	perl tests/validate_basic.pl
 
+menu:
+	node tools/interactive_menu.js
+
 install: tools/basic_validate_launcher.py
 	install -d /usr/local/bin
 	install -m 4755 $< /usr/local/bin/basic-validate
@@ -45,4 +48,4 @@ clean:
 	rm -rf $(OBJDIR) $(LIB_NAME) $(TARGET) 
 
 
-.PHONY: all clean help install
+.PHONY: all clean help install menu

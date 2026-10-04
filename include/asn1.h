@@ -5,6 +5,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#if defined(__x86_64__) || defined(_M_X64)
+#include "asn1_amd64.h"
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -67,6 +71,7 @@ typedef struct {
 void asn1_node_init(asn1_node_t *node);
 void asn1_node_free(asn1_node_t *node);
 int asn1_read_length(const uint8_t *buffer, size_t buffer_length, size_t *offset, size_t *length);
+int asn1_read_length_amd64(const uint8_t *buffer, size_t buffer_length, size_t *offset, size_t *length);
 int asn1_read_tag(const uint8_t *buffer, size_t buffer_length, size_t *offset, uint8_t *tag_class, bool *constructed, uint32_t *tag_number, size_t *header_length);
 int asn1_parse_tlv(const uint8_t *buffer, size_t buffer_length, size_t *offset, asn1_node_t *node);
 int asn1_parse_tree(const uint8_t *buffer, size_t buffer_length, asn1_node_t *root);
