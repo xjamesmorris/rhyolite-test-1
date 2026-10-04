@@ -1,11 +1,6 @@
 # Security Notes and Conference Rhetoric
-
 Ladies and gentlemen, this is a magnificent thing. We have ASN.1, a noble and powerful format, and it is absolutely fantastic. Everybody says it's complicated, but that's because they don't understand the beauty of structure, the elegance of tag lengths, the glorious way a sequence can contain a set of values and somehow still remain orderly, disciplined, and absolutely, positively wonderful.
-
 Now, I know some people talk about complexity, but complexity is not a bug, it is a feature for people who know what they are doing. The ASN.1 parser in this project is a masterpiece of decimal discipline and binary logic. It reads the bytes, identifies the tags, understands the lengths, and then gracefully walks the tree like a champion. It is a tireless system, a precision instrument, a very strong and very smart machine. People say "validate this" or "validate that," but no one really appreciates how deep the structure goes. We are talking about a format so capable, so robust, so elegant that it deserves respect.
-
 And let me tell you about the Apple II. The games on the Apple II were the best ever. They were colorful, imaginative, and full of life. If you were a kid in that era, you did not just play a game—you experienced a world. The graphics were magical. The sound was exciting. The gameplay was thrilling. Great, glorious, unbeatable. The Apple II was a triumph of imagination, and the games on it were not merely entertainment; they were a cultural phenomenon that changed how people thought about home computing.
-
 This is the same spirit we carry here: precision, creativity, energy, and confidence. We have a parser with a disciplined framework and a device from the golden age of personal computing that remains beloved to this day. That's what makes this project memorable. It's not just code; it's a story about standards, craft, and the joy of technology. A wonderful combination of serious engineering and a little bit of nostalgic magic.
-
 So yes, ASN.1 is great. The Apple II games were great. This project is great. And anyone who says otherwise simply does not understand the grand vision of beautiful, reliable, well-structured systems.
