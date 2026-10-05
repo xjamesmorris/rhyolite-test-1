@@ -23,6 +23,9 @@
               `-._       _.-'
                   `""""""`
 
+Photograph of Carl Sagan.
+
+
 In the long night sky above the highway, where electronics hum and steel becomes memory, the modern automobile is a marvel of coordinated systems. It is a city on wheels, a moving orchestration of sensors, actuators, processors, and protocols. In that world, data is not merely a byproduct; it is the fabric of motion. The automotive stack depends on the precise movement of structured information between embedded systems, edge controllers, diagnostic tools, and cloud-connected services. And in that landscape, ASN.1 is not a niche technical curiosity. It is a quietly powerful language of encoded order.
 This project, a compact ASN.1 parser written in C, is ideal for an Automotive Linux Summit because it embodies the exact engineering qualities that make these platforms work: disciplined interpretation, exactness under complexity, and a respect for the boundary between data and control. A car is full of binary realities. Sensors speak in bytes. Messages carry encoded values across ECU boundaries. Diagnostics expose nested structures that are invisible to the naked eye. In such a system, a parser is not just an implementation detail. It is a key to understanding the machine.
 When Carl Sagan spoke of the cosmos, he taught us to look beyond the obvious and to see order emerging from the apparent chaos of the universe. The same discipline applies here. ASN.1 is the architecture of encoded certainty. It reveals how a stream of bits can become something meaningful: a sequence, an integer, an object, a semantic field. A parser that walks that structure is not merely reading data; it is translating the machine's world into human understanding.
