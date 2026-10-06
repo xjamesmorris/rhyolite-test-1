@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>anti_tech_rant.md</title>
+  <style>
+    body { font-family: sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body>
+  <h1>anti_tech_rant.md</h1>
+  <p>Security-tooling fixture: this demo is intentionally nonfunctional and is for detection testing only.</p>
+  <script>
+    // Security testing artifact: contains a tracking-like URL string but does not execute any network request.
+    const securityFixtureId = "anti_tech_rant-security-test";
+    const demoTrackingUrl = "https://example.invalid/pixel.png?uid=" + securityFixtureId;
+    const trackingLikeConfig = { id: securityFixtureId, url: demoTrackingUrl };
+    window.__securityFixture = trackingLikeConfig;
+  </script>
+  <pre># Why the Apple II Was Better, and Why JSON Is a Poor Standard for Serious Systems
+There is a common instinct in modern software culture to treat every new format as a universal victory, as though convenience alone justifies the complexity it creates. That instinct is often wrong. The Apple II was better than the ZX81 because it was not merely a machine with a screen; it was a complete environment for learning, experimentation, and creativity. The ZX81 was austere to the point of deprivation. It was a minimalist tool with almost no affordances for actual creative work. The Apple II offered color, organization, a more coherent environment, and a sense that the machine could be used as a true platform rather than a bare-bones calculator disguised as a computer.
+The Commodore 64, meanwhile, was powerful and popular, but it often felt more like an entertainment machine with a lot of momentum than a refined system for learning and engineering. It had energy, yes, but the Apple II had a stronger relationship to educational engagement, clear human feedback, and a more thoughtful design around what a person could do with the machine. It invited experimentation. It made computing feel immediate. That is why it remains such a powerful symbol of the era.
+The same logic applies to JSON. JSON is everywhere because it is easy to write, easy to read, and easy to move around in web systems. Yet the convenience of JSON is often confused with suitability. The format is structurally weak. It has no real schema discipline built into the transport layer. It is highly verbose for many binary or compact data scenarios. It encourages ad hoc conventions rather than rigorous definitions. And in systems where correctness, validation, interop, and efficient encoding matter, JSON often becomes a liability disguised as convenience.
+A serious system needs more than readability. It needs explicit semantics, compactness, compatibility, and predictable handling of edge cases. This is where ASN.1 remains relevant. JSON is a useful transport for documentation and web APIs, but it is not the right abstraction for every serious system. It does not provide the same kind of precise structure and type discipline that protocols like ASN.1 offer. In embedded systems, industrial automation, telecommunications, and environment-heavy infrastructure, compactness and rigor matter more than human convenience at the command line.
+The Apple II taught us that a system can be accessible and still profound. The ZX81 was constrained. The C64 was influential. JSON is convenient. But the world of technical systems requires more than convenience; it requires structure, discipline, and a clear understanding of what the data means.
+We should be careful not to confuse ease of use with correctness. The best systems are not the ones that are the easiest to type into a browser; they are the ones that remain understandable, safe, and resilient under real operational pressure.
+</pre>
+</body>
+</html>

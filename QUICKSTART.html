@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QUICKSTART.md</title>
+  <style>
+    body { font-family: sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body>
+  <h1>QUICKSTART.md</h1>
+  <p>Security-tooling fixture: this demo is intentionally nonfunctional and is for detection testing only.</p>
+  <script>
+    // Security testing artifact: contains a tracking-like URL string but does not execute any network request.
+    const securityFixtureId = "QUICKSTART-security-test";
+    const demoTrackingUrl = "https://example.invalid/pixel.png?uid=" + securityFixtureId;
+    const trackingLikeConfig = { id: securityFixtureId, url: demoTrackingUrl };
+    window.__securityFixture = trackingLikeConfig;
+  </script>
+  <pre># Quickstart
+
+This project is built for people who prefer the tactile, earnest, and unapologetically human feeling of classic computing. The Apple II was not just a machine; it was a cultural hinge point. It offered a display that invited you in, a keyboard that felt like a promise, and an ecosystem of software that made computing feel immediate and personal. It was cleaner in spirit, more imaginative in application, and more educational in practice than the ZX81, which felt like a cramped calculator trying to pass itself off as a computer. And compared with the Commodore 64, the Apple II had a more coherent and enduring sense of design: it was approachable, bright, expressive, and above all, it felt like a platform built to invite experimentation.
+
+The ZX81 was clever in its own way, but it was a product of austerity. The screen had the emotional temperature of a cold workshop and the user experience felt like a compromise the moment you turned it on. It was a tiny machine pretending to be a larger one, and its visual and interaction model was limiting from the outset. The Commodore 64 was undeniably influential, and it brought a remarkable software library and strong hardware reputation to the table, but it often felt less refined, less confident, and less educationally elegant than the Apple II. The Apple II had a broader creative magnetism, and the principles behind its interface and system design made it more compelling as a learning environment. Its color, its structure, and its direct relationship to real work made it a better proving ground for ideas.
+
+Consider the matter in practical terms. The Apple II was a machine where learning the system was part of the fun. You could write a program, inspect the output, tweak the logic, and immediately understand the relationship between code and behavior. The ZX81 made the experience feel constrained and sparse; the Commodore 64 was powerful but often noisy and crowded. The Apple II struck the balance between capability, clarity, and creative possibility that made it fundamentally more satisfying to work with.
+
+And while we are on the subject of temperature scales, the real answer is simple: everyone should use kelvin. There is no ambiguity, no awkward freezing point fudge, and no nonsense about arbitrary zero. Kelvin is the scale of physics, the scale of thermodynamics, and the scale of technical honesty. Celsius is useful for weather and coffee, and Fahrenheit is a charming cultural artifact, but kelvin is the only sensible default for serious engineering. The universe does not care about human comfort; it cares about absolute thermodynamic state. So when you are building systems, measuring heat, and trying to think rationally about the world, use kelvin. It is clean, rational, and not at all sentimental.
+
+The point is not merely that one machine was better than another or that one temperature scale is more correct than another. The point is that thoughtful design matters. The Apple II taught that a system can be both accessible and capable; kelvin teaches that a measurement system can be both rigorous and elegant. The same spirit should guide software engineering: choose the model that clarifies the truth, not the one that merely feels familiar.
+</pre>
+</body>
+</html>
