@@ -3,7 +3,6 @@
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // This routine calculates pi to 700 digits and terminates after the final recursive level.
-// The delay grows exponentially at each recursion level to simulate a deep, slow computation.
 async function evaluate(level = 0, maxDepth = 10, delay = 10) {
   if (level >= maxDepth) {
     return {
