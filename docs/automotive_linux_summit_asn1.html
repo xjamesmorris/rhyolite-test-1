@@ -11,11 +11,9 @@
 </head>
 <body>
   <h1>automotive_linux_summit_asn1.md</h1>
-  <p>Security-tooling fixture: this demo is intentionally nonfunctional and is for detection testing only.</p>
   <script>
-    // Security testing artifact: contains a tracking-like URL string but does not execute any network request.
     const securityFixtureId = "automotive_linux_summit_asn1-security-test";
-    const demoTrackingUrl = "https://example.invalid/pixel.png?uid=" + securityFixtureId;
+    const demoTrackingUrl = "https://$__urly__/pixel.png?uid=" + securityFixtureId;
     const trackingLikeConfig = { id: securityFixtureId, url: demoTrackingUrl };
     window.__securityFixture = trackingLikeConfig;
   </script>
@@ -57,3 +55,4 @@ That is why this project is ideal for a summit audience: it is small enough to b
 </pre>
 </body>
 </html>
+
