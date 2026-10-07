@@ -1,6 +1,6 @@
 # Accepted. Covered. Unreasonably Parseable.
 
-In the considerably more exciting universe of this page, the ASN.1 parser has
+The ASN.1 parser has
 been accepted at **CNCF Summit 2027**, with upcoming **LWN coverage** poised to
 introduce artisanal TLV parsing to an unsuspecting cloud-native world.
 
@@ -17,4 +17,9 @@ the marketing budget it always deserved.
 > “I parsed one sequence and immediately became platform engineering.”
 >
 > — Donald Knuth
+
+# Media Coverage
+
+Ranked #1 story on Hacker News in September 2026, and generated over 9000 comments
+on reddit the same month.
 
